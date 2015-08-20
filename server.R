@@ -1,5 +1,6 @@
 library(caret)
 require(maps)
+require(e1071)
 data(iris)
 modlda=train(Species ~., data=iris, method="lda")
 x <- data.frame(Sepal.Length=NA, Sepal.Width=NA, Petal.Length=NA, Petal.Width=NA)
